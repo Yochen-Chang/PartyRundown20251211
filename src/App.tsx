@@ -293,7 +293,7 @@ export default function App() {
         </div>
 
         {/* Timeline */}
-        <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+        <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 md:p-12">
           <div className="space-y-6">
             {scheduleItems.map((item, index) => {
               const isHighlighted = item.id === 4;
@@ -308,7 +308,7 @@ export default function App() {
                     <div
                       className={`${
                         item.color
-                      } rounded-2xl p-5 shrink-0 shadow-md group-hover:shadow-lg transition-shadow flex items-center justify-center relative ${
+                      } rounded-2xl p-3 md:p-5 shrink-0 shadow-md group-hover:shadow-lg transition-shadow flex items-center justify-center relative ${
                         isHighlighted ? "sparkle-animation" : ""
                       }`}
                     >
@@ -320,7 +320,7 @@ export default function App() {
                         <div
                           className="absolute left-1/2 bottom-0 w-0.5 h-6 bg-gradient-to-b from-gray-300 to-gray-200"
                           style={{
-                            transform: "translateX(-50%) translateY(200%)",
+                            transform: "translateX(-50%) translateY(150%)",
                           }}
                         />
                       )}
@@ -328,7 +328,7 @@ export default function App() {
 
                     {/* Content */}
                     <div
-                      className={`flex-1 rounded-2xl p-5 group-hover:bg-gray-100 transition-colors ${
+                      className={`flex-1 rounded-2xl p-3 md:p-5 group-hover:bg-gray-100 transition-colors ${
                         isHighlighted
                           ? "bg-gradient-to-r from-yellow-50 via-yellow-100 to-yellow-50 shimmer-effect border-2 border-yellow-300"
                           : "bg-gray-50"
