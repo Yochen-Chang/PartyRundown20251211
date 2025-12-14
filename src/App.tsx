@@ -266,25 +266,35 @@ export default function App() {
           {/* Event Info */}
           <div className="bg-white rounded-2xl shadow-lg p-6 max-w-md mx-auto">
             <div className="flex items-center justify-center gap-2 mb-3">
-              <Clock className="w-5 h-5 text-pink-500" />
+              {/* Google Calendar Icon */}
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg" 
+                alt="Google Calendar" 
+                className="w-5 h-5"
+              />
               <a
-                className="text-gray-700"
+                className="text-black hover:text-gray-800 cursor-pointer transition-all duration-200 hover:bg-gray-50 px-2 py-1 rounded"
+                style={{ textDecoration: "underline", textDecorationColor: "#9ca3af" }}
                 href="https://www.google.com/calendar/event?action=TEMPLATE&text=LisaYC寶寶性別派對&dates=20260201T060000Z%2F20260201T090000Z&location=Big Apple Swing Studio 搖擺舞教室&pli=1&uid=&sf=true&output=xml"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>2026/02/01</span>
-                <span className="mx-2"> </span>
-                <span>14:00 ~ 17:00</span>
+                <span>2026/02/01 14:00 ~ 17:00</span>
               </a>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <MapPin className="w-5 h-5 text-blue-500" />
+              {/* Google Maps Icon */}
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/3/39/Google_Maps_icon_%282015-2020%29.svg" 
+                alt="Google Maps" 
+                className="w-5 h-5"
+              />
               <a
                 href="https://maps.app.goo.gl/PFCxbGwubQoU5JVL6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700"
+                className="text-black hover:text-gray-800 cursor-pointer transition-all duration-200 hover:bg-gray-50 px-2 py-1 rounded"
+                style={{ textDecoration: "underline", textDecorationColor: "#9ca3af" }}
               >
                 Big Apple Swing Studio 搖擺舞教室
               </a>
