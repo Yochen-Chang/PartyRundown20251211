@@ -41,8 +41,8 @@ export default function App() {
     },
     {
       id: 5,
-      time: "16:45 ~ 17:00",
-      title: "神秘小活動",
+      time: "16:05 ~ 16:15",
+      title: "頒獎典禮",
       icon: <Gift className="w-6 h-6" />,
       color: "bg-green-100 text-green-600",
     },
